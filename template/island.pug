@@ -1,0 +1,88 @@
+extends layout
+
+block vars
+    - let title = '神舟国旅'
+
+block content
+    .clearfix
+    .area.mt10
+        .area-left-ej
+            include lib/list
+            .home-right-box
+                h2 当季产品推荐
+                ul.home-right-list
+            .home-right-box
+                h2 猜你喜欢
+                ul.home-right-list
+        .area-right-ej
+            .ej-hot-product
+            .ej-box
+                .shaixuan
+                    form#listform
+                        .shaixuan_box
+                            h2 行程天数：
+                            ul.s
+                                a.selected(href='javascript:;', search_key='days', search_value='-1') 不限
+                                a(href='javascript:;', search_key='days', search_value='7') 7天
+                        .shaixuan_box
+                            h2 筛选：
+                            ul.s
+                                li
+                                    label
+                                        input(type='checkbox', name='is_recommend', value='1')
+                                        |  推荐
+                                li
+                                    label
+                                        input(type='checkbox', name='is_hot', value='1')
+                                        |  热销
+                                li
+                                    label
+                                        input(type='checkbox', name='is_marked', value='1')
+                                        |  特惠
+                .ej-product-list
+                    #group_listview.list-view
+                        .b_fore.clearfix
+                            .ej-box-tit
+                                ul
+                                    li
+                                        a(href='javascript:;') 时间
+                                    li
+                                        a(href='javascript:;') 价格
+                            .summary 第 1-1 条, 共 1 条.
+                            div(style='clear: both;')
+                            .ej-box-tit-line
+                        .items
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 海岛游
+                                        img(src='/public/images/files/2016-05/u=1096320015,2492050410&fm=21&gp=0.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details')
+                                            | 魅力兰卡5晚7日游
+                                    p
+                                        | 线路编号：
+                                        span 20167335662
+                                        | 行程：
+                                        span 7天
+                                        | 出团日期：
+                                        span 10/30 ...
+                                    p
+                                        | 【国际交通】 国泰航空，快捷方便。
+                                        | 【签证手续】斯里兰卡电子签证。
+                                        | 【科伦坡】斯里兰卡最大城市，全国政治、经济、文化和交通中心。印度洋重要港口，世界著名的人工海港。
+                                        | 【丹布勒石窟】1991年列入世界文化遗产，历经岁月的更迭，却依然鲜明如昔。
+                                        | 【狮子岩】世界第八大奇迹，斯里兰...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20167335662-price 5950
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                        .ej-box-tit-line2
+
+    .clearfix
+block script
+    script.

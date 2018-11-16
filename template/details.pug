@@ -1,0 +1,517 @@
+extends layout
+
+block vars
+    - let title = '旅游详情'
+block content
+    .area.mt10
+        .content_top.mt10
+            h2 银环【文化之旅】台湾特色环岛8天【台湾大学+东海大学 高雄佛光山 3晚五花一晚温泉】长荣直飞
+            .clear
+            .content_left
+                .syFocusThumb
+                    #syFocusThumb.sliderwrapper
+                        .contentdiv
+                            .dPic
+                                a(href='javascript:;')
+                                    img( src='/public/images/files/2016-11/Cghzf1UIW0uAZ-8SAAdB7eu5HOo804.jpg', width='560', height='420')
+                        .contentdiv
+                            .dPic
+                                a(href='javascript:;')
+                                    img( src='/public/images/files/2016-11/4b6988a7tx6CANjTHg6ea&690.jpg', width='560', height='420')
+                        .contentdiv
+                            .dPic
+                                a(href='javascript:;')
+                                    img( src='/public/images/files/2016-11/38_309152_52266b176f34375.jpg', width='560', height='420')
+                        .contentdiv
+                            .dPic
+                                a(href='javascript:;')
+                                    img( src='/public/images/files/2016-11/136852.jpg', width='560', height='420')
+                        .contentdiv
+                            .dPic
+                                a(href='javascript:;')
+                                    img( src='/public/images/files/2016-11/161435412.jpg', width='560', height='420')
+                    #paginate-syFocusThumb.pagination
+                        i#prev.prev
+                        .thumbWrap
+                            .holder(style='margin-left: -1px;')
+                                i.toc
+                                    a(href='javascript:;')
+                                        img( src='/public/images/files/2016-11/Cghzf1UIW0uAZ-8SAAdB7eu5HOo804.jpg', width='92', height='69')
+                                i.toc
+                                    a(href='javascript:;')
+                                        img( src='/public/images/files/2016-11/4b6988a7tx6CANjTHg6ea&690.jpg', width='92', height='69')
+                                i.toc
+                                    a(href='javascript:;')
+                                        img( src='/public/images/files/2016-11/38_309152_52266b176f34375.jpg', width='92', height='69')
+                                i.toc
+                                    a(href='javascript:;')
+                                        img( src='/public/images/files/2016-11/136852.jpg', width='92', height='69')
+                                i.toc
+                                    a(href='javascript:;')
+                                        img( src='/public/images/files/2016-11/161435412.jpg', width='92', height='69')
+                        i#next.next
+                .clear
+                .sell_out
+                    b
+                .content_data
+            .content_right
+                .price
+                    | 优惠价：￥
+                    span.p.uz-g-price-item.uz-g-20168168220-price 3680
+                    |  起
+                    span.qj
+                        a(href='javascript:;') 起价说明
+                p
+                    span.t 线路编号：
+                    | 20168168220
+                .clear
+                p
+                    span.t 产品类型：
+                    b 出境跟团游
+                .clear
+                p
+                    span.t 产品主题：
+                    | 推荐产品,短线游
+                .clear
+                p
+                    span.t 出发地点：
+                    | 北京
+                .clear
+                p
+                    span.t 目的地点：
+                    | 台北 台中 南投 嘉义 高雄 垦丁 台东 花莲
+                .clear
+                p
+                    span.t 行程天数：
+                    | 8天
+                .clear
+                p
+                    span.t 导游服务：
+                    | 领队+地陪
+                .clear
+
+                .d
+                    h3 行程特色
+                    div(style='max-height: 266px; height:266px;overflow-y: scroll; overflow-x:visible; font-size: 14px; line-height: 1.8em;')
+                        | 台湾大学创立于1928年，是台湾最早设立的大学，也是台湾最完整的综合型兼研究型大学，全校占地约达全岛陆地的百分之一，全台湾位列第一，全世界第124名的大学，校园内拥有美丽的自然风光。
+                        br
+                        br
+                        | 东海大学是台湾顶尖的研究型综合大学也是台湾第一所私立大学，素有“台湾最美大学”美誉。由著名华人建筑大师贝聿铭设计的台中市地标“路思义教堂”就坐落在东海大学第一校区。
+                        br
+                        br
+                        | 佛光山是中外闻名的佛教胜地，有"南台佛都"之号。是由星云法师率领弟子创建的。创
+                        | 建于民国56年，其寺庙建筑宏伟，并设立了佛教大学，以推广佛法，佛光山是台湾最大的佛教道场，为倡"人间佛教"之道，一砖一瓦建立起佛光山，成为台湾信众最多、最富盛名的佛教圣地。
+                        br
+                        br
+                        | NO1：赠送台北101登顶500米高空俯瞰整个台北市。
+                        br
+                        | NO2：世界四大博物馆之一台北故宫博物院馆藏60多万件珍品。
+                        br
+                        | NO3：台湾八景之一日月潭风景区
+                        br
+                        | NO4：台湾阿里山森林游乐区，乘坐小火车
+                        br
+                        | NO5：台北夜市（盐酥鸡、蚵仔煎、珍珠奶茶等等）
+                        br
+                        | NO6：来到垦丁，吹着海风吃着海鲜，感受海风的气息，品尝海的味道。
+                        br
+                        | NO7：台湾地质公园-太鲁阁公园
+                        br
+                        | NO8：花莲——宜兰感受台湾铁路游览的魅力。
+                        br
+                        | NO9：提前预定飞机餐，提前用餐VIP待遇
+                        br
+                        | ————————————————
+                        br
+                        | 住宿：全程升级3晚五花酒店，赠送一晚温泉酒店（请自备泳衣泳帽）
+                        br
+                        | 保证：全程无自费、无小费（一经发现团费双倍赔偿）
+                        br
+                        | 赠送：台湾专属旅游人身意外险 确保您旅途的舒适与安心。
+                .clear
+                .d
+                    hr(style='margin-top: 15px; margin-bottom: 15px;')
+                    h3
+                        | 可选定制 
+                        span VIP
+                        |  小包团 
+                        span.tel 4000100808
+                    p
+                        | 1、我们专业的团队为您提供周全的服务,让您安心出游;
+                        br
+                        | 2、专属导游全程呵护,让私家团尽享尊贵;
+                        br
+                        | 3、4人以上即可独立成行;
+                        br
+                        | 4、神舟国旅为您安排了专属的客服,预订后享受一对一的服务;
+                        br
+                        | 5、根据您所需的行程安排和旅游目的地,让您拥有更好的旅游;
+                        br
+                        img(src='/public/images/lc.jpg', )
+                .clear
+            .clear
+            #js_order.js_order(style='display: none;')
+                input#group(type='hidden')
+                input#chanid(type='hidden')
+                input#totalPrice(type='hidden')
+                ul.resource_price_wrap.basefix
+                    li.start_date.abc_start_date
+                        label(for='') 出发时间
+                        .input_wrap
+                            input#js-departure-date(type='text', placeholder=' 请选择出发日期', readonly='readonly')
+                            b
+                    li.tourist_num
+                        label(for='') 人数
+                        .input_wrap
+                            input.order_num(type='number', readonly='readonly', value='1', min='1', max='10')
+                            b
+                            p(style='display:none')
+                                a(href='javascript:void(0);') 1
+                                a(href='javascript:void(0);') 2
+                                a(href='javascript:void(0);') 3
+                                a(href='javascript:void(0);') 4
+                                a(href='javascript:void(0);') 5
+                                a(href='javascript:void(0);') 6
+                                a(href='javascript:void(0);') 7
+                                a(href='javascript:void(0);') 8
+                                a(href='javascript:void(0);') 9
+                                a(href='javascript:void(0);') 10
+                    li.total_price
+                        span.price_name 总价
+                        span.price --
+                        i#J_acpricetip.price_icon(style='display:none')
+                        a#js-submit.btn_red_big(href='javascript:void(0);')  开始预订 
+                        #J_pricealert.price_alert(style='display:none')
+                .resource_wrap
+                    table#memberlist.table.table-hover.uz-buy-table
+                        tbody
+                            tr#head
+                                th(style='text-align: center;') 服务标准(单选)
+                                th(style='text-align: center;') 可选资源（多选）
+                                th(style='text-align: center;') 金额（元）
+                                th(style='text-align: center; width: 50px;') 操作
+        .content_tab
+            ul#scroll_nav.scroll_nav_ul(selfpack='false')
+                li.row_1
+                    a(href='javascript:void(0)', onclick="cmCreateTabElements('行程精编')") 行程精编
+                li.row_2
+                    a(href='javascript:void(0)', onclick="cmCreateTabElements('费用说明')") 费用说明
+                li.row_3
+                    a(href='javascript:void(0)', onclick="cmCreateTabElements('参团须知')") 参团须知
+                li.row_4
+                    a(href='javascript:void(0)', onclick="cmCreateTabElements('自费协议')") 自费协议
+                li.row_5
+                    a(href='javascript:void(0)', onclick="cmCreateTabElements('签证信息')") 签证信息
+            i#row_1.pkg-maodian  
+            h3.nr_tit 行程精编
+            .content_nr
+                strong 行程安排：
+                | 银环【文化之旅】台湾特色环岛8天【台湾大学+东海大学 高雄佛光山
+                | 				3晚五花一晚温泉】长荣直飞台北 台中 南投 嘉义 高雄 垦丁 台东 花莲 
+                br
+                strong 第1天：
+                strong
+                    | 从 北京
+                    | 到 台北
+                p
+                    span(style='font-size:12pt;')
+                        span(style='font-family:宋体;')
+                            | 参考航班：
+                            | BR715（19：45 ——22：55）飞行时间约3小时
+                p
+                    span(style='font-size:12pt;')
+                        span(style='font-family:宋体;') 下午：首都机场T3航站楼集合，在领队的带领下统一办理赴台手续。搭乘长荣航班飞往桃园
+                    span(style='font-family: 宋体; font-size: 12pt; line-height: 1.6;') 机场。抵达后办理入关手续，乘车前往酒店入住休息。
+                p
+                    span(style='font-size:16px;') 酒店：当地四花级酒店    用餐：XXX    交通：飞机、汽车
+                strong 244
+                strong 672
+                br
+                p
+                strong 第2天：
+                strong 从 台北 到 台中
+                p
+                    span(style='font-size:16px;')
+                        | 上午：在酒店用早餐，后前往闻名中外【故宫博物院】参观，馆中文物收藏极为丰盛，近七十万件，与美、英、法(卢浮宫)，举世公认并列世界四大博物馆。后前往蒋介石和宋美龄在台北的住处【士林官邸】花园参观游览。
+                        br
+                        | 下午：
+                    span(style='font-size:12pt;')
+                        span(style='color:#000000;')
+                            span(style='font-family:宋体;') 中餐后
+                    span(style='font-size:16px;') 前往有曼哈顿之称的【台北101大楼】登顶，后前往纪念孙中山先生的【国父纪念馆】参观游览。
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 【国立台湾大学】创立于
+                            | 1928年，是台湾最早设立的大学，也是台湾最完整的综合型兼研究型大学，全校占地约达全岛陆地的百分之一，全台湾位列第一，全世界第124名的大学，校园内拥有美丽的自然风光。
+                p
+                    span(style='font-size: 16px; line-height: 25.6px;')
+                        | 酒店：当地四花级酒店      用餐：早中晚
+                        | 交通：汽车
+                strong 672
+                strong 2497
+                br
+                p
+                strong 第3天：
+                strong 从 台中 到 嘉义
+                p
+                    span(style='font-size:16px;')
+                        span(style='font-family:宋体;') 上午：
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 在酒店用早餐，乘车前往【台湾东海大学】
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 是
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 台湾顶尖的研究型综合大学
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') ，
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 也是台湾第一所私立大学，素有
+                            | “台湾最美大学”美誉。由著名华人建筑大师贝聿铭设计的台中市地标—路思义教堂就坐落在东海大学第一校区。
+                    br
+                    span(style='font-size:16px;')
+                        | 下午：中餐后前往台湾八景中的絶胜【日月潭风景区】搭船游湖。晚餐后乘车前往嘉义，抵达酒店后入住休息。
+                        br
+                        | 酒店：当地四花级酒店    用餐：早中晚    交通：汽车
+                strong 2497
+                strong 2616
+                strong 2603
+                br
+                p
+                strong 第4天：
+                strong 从 嘉义 到 高雄
+                p
+                    span(style='font-size:16px;')
+                        | 上午：酒店用早餐，后前往【阿里山森林游乐区】那里气候四季相差不大，这个季节除观赏美景之外，更可体验阿里山的神秘与浪漫。
+                        br
+                        | 下午：参观完阿里山森林游乐区后乘车前往高雄，途中为了缓解疲劳特意安排茶园小憩一下，
+                        span(style='color:#0000FF;') 观名山、品名茶
+                        | 。
+                    span(style='font-size:12.0000pt;')
+                        span(style='font-family:宋体;')
+                            span(style='font-family:宋体;') 抵达【佛光山】是中外闻名的佛教胜地，有
+                            | "南台佛都"之号。是由星云法师率领弟子创建的。创
+                            | 	建于民国56年，其寺庙建筑宏伟，并设立了佛教大学，以推广佛法，佛光山是台湾最大的佛教道场，为提倡"人间佛教"之道，一砖一瓦建立起佛光山，成为台湾信众最多、最富盛名的佛教圣地。远眺【西子湾风景区】尽收眼底。车游夜晚的【爱河】。前往【高雄夜市】品尝当地特色小吃，后返回酒店入住休息。
+                    br
+                    span(style='font-size:16px;') 酒店：当地四花级酒店      用餐：早中X    交通：汽车
+                strong 2603
+                strong 700
+                br
+                p
+                strong 第5天：
+                strong 从 高雄 到 台东
+                p
+                    span(style='font-size:16px;')
+                        | 上午：酒店用早餐，后参观
+                        span(style='color:#0000FF;') 钻石博物馆
+                        | ，乘车前往风景宜人的垦丁国家公园。
+                        br
+                        | 下午：【龙
+                    span(style='font-size: 16px; line-height: 25.6px;') 磐
+                    span(style='font-size:16px;')
+                        | 公园】龙磐大草原并不是一大片旅行者可以在上面尽情翻滚的草原，相反的，你只能站在高处远眺她。【鹅銮鼻灯塔】位于台湾最南端，隔巴士海峡与菲律宾遥遥相望，远眺【猫鼻头】，观赏「猫形巨岩」，后继续前往台东温泉区享受〝免费温泉泡汤〞，请客人自备泳衣泳裤泳帽。晚餐后返回酒店入住休息。
+                        br
+                        | 酒店：当地四花级酒店      用餐：早中晚    交通：汽车
+                strong 700
+                strong 2492
+                strong 2496
+                br
+                p
+                strong 第6天：
+                strong 从 台东 到 花莲
+                p
+                    span(style='font-size:16px;') 上午：酒店用早餐，
+                    span(style='font-size: 16px; line-height: 25.6px;') 参观
+                    span(style='font-size: 16px; line-height: 25.6px; color: rgb(0, 0, 255);') 珊瑚博物馆
+                    span(style='font-size: 16px; line-height: 25.6px;') 。
+                    span(style='font-size:16px;')
+                        | 经过花莲东海岸公路，游览【北回归线纪念碑】
+                        br
+                        | 下午：乘车前往花莲游览【太鲁阁国家公园】沿途的大理石峡谷风光令人赞叹不已。晚餐入住酒店休息。
+                        br
+                        | 酒店：当地四花级酒店   用餐：早中晚    交通：汽车
+                strong 2496
+                strong 2609
+                br
+                p
+                strong 第7天：
+                strong 从 花莲 到 台北
+                p
+                    span(style='font-size:16px;')
+                        | 上午：酒店用早餐酒店用早餐，参观
+                        span(style='color:#0000FF;') 大理石博物馆
+                        | ，后由花莲乘火车前往苏澳（乘坐火车可减少您旅途疲劳、躲避最危险路段），经亚洲第二长的公路隧道【雪山隧道】。
+                        br
+                        | 下午：进入【野柳风景区】(女王头、烛台石、姜石)等景点由于海蚀风化及地壳运动等作用，造就了绵延罗列的特景观。前往机场
+                        span(style='color:#0000FF;') 免税店—升恒昌
+                        | ，途中赠送品尝
+                        span(style='color:#0000FF;') 台湾“道地”名品糕点
+                        | 。前往台湾夜市--台北夜市自行品尝当地各式风味小吃，返回酒店入住休息。
+                        br
+                        | 酒店：当地四花级酒店       用餐：早中X    交通：汽车，火车
+                strong 2609
+                strong 672
+                br
+                p
+                strong 第8天：
+                strong 从 台北 到 北京
+                p
+                    span(style='font-size:12pt;')
+                        span(style='font-family:宋体;') 参考航班： BR716（15：20——18：35）落地
+                p
+                    span(style='font-size:12pt;')
+                        span(style='font-family:宋体;')
+                            | 上午：酒店用早餐，赠送
+                            span(style='color:#0000FF;') 参观台北精品店
+                            | 。【诚品书店】台北的书店很多，诚品书店已经成为台湾的文化景点，许多国际旅人去台湾为的只是去一趟诚品，被称为世界级的文化地标。
+                p
+                    span(style='font-size:12pt;')
+                        span(style='font-family:宋体;') 下午：午餐后，专车前往桃园国际机场办理登机手续，后搭乘豪华客机返回北京，结束难忘的宝岛之旅。
+                p
+                    span(style='font-size:16px;') 酒店：温馨的家    用餐：早午X    交通：汽车,飞机
+                p
+                    span(style='font-size:16px;') 【备注：每周二四六出发的长荣午班最后一天无行程，直接前往机场】
+                strong 672
+                strong 244
+                br
+                p
+            i#row_2.pkg-maodian  
+            h3.nr_tit 费用说明
+            .content_nr
+                p
+                    span(style='font-size:14px;')
+                        | 1、交通：北京-台湾往返团队经济舱机票及机场税、台湾当地豪华旅游巴士；
+                        br
+                        | 2、住宿：行程中所列全程四花酒店双人标准间；
+                        br
+                        | 3、用餐：行程中所列餐食（含台湾特色餐），若用餐时间恰逢在飞机上则用机餐；
+                        br
+                        | 4、证件：台湾签发的入台观光证；（如持个签证件，请注意主申请人与随行人员同时出团，如主申请人临时取消出团，随行人员也不能入台）
+                        br
+                        | 5、门票：行程中所列景点首道门票；
+                        br
+                        | 6、导游：台湾当地优秀导游服务及全程优秀领队；
+                        br
+                        | 7、保险：旅行社责任险台币200万元/人、大陆居民赴台旅游专属保险-意外、突发疾病医疗保险（含既往症）。
+            i#row_3.pkg-maodian  
+            h3.nr_tit 参团须知
+            .content_nr
+                p
+                    span(style='font-size:14px;')
+                        | 以上行程供您参考，旅行社有权据航班情况调整顺序，遇景点维修等非旅行社控制因素，旅行社保留使用其它相关代替景点的权利！
+                        br
+                        | 备注：行程中安排的阿里山景区，若遇到人力不可抗拒因素（刮风、下雨、落石、泥石流）等情况出现，此行程更改为台南景区游览！
+                p  
+                p
+                    span(style='font-size:14px;')
+                        span(style='color:#FF0000;')
+                            strong 报价不含项目：
+                        br
+                        | 1、往返航空保险；
+                        br
+                        | 2、酒店住宿内房费以外之额外消费（如行李小费、床头小费等）；
+                        br
+                        | 3、《大陆居民往来台湾通行证》办证费；
+                        br
+                        | 4、儿童不占床的价格单团单议，如小孩占床与成人同价；
+                        br
+                        | 5、出现单男单女及自然单间补单房差（单房差非节假日320元/每间夜）；
+                        br
+                        | 6、因人力不可抗拒因素或国家政策性调整所产生的行程外消费及一切私人消费
+                        br
+                        | 7、航空燃油附加费再次涨幅、不可抗拒原因所产生的费用（如：台风、地震、罢工等）、机场候机与转机的餐食
+                p  
+            i#row_4.pkg-maodian  
+            h3.nr_tit 自费协议
+            .content_nr
+                p
+                    span 本行程为购物团5+2，购物店为：茶叶、钻石、珊瑚、大理石、精品和
+                    span 免税、土特产
+                p  
+                p
+                    span(style='font-size:18px;')
+                        | 请仔细阅读行程，确认景点及购物内容，以作为合同附件之一。
+                        br
+                        | 参神舟、享品质！
+            i#row_5.pkg-maodian  
+            h3.nr_tit 签证信息
+            .content_nr
+                .tuanqian
+                    p
+                        span(style='background-color: rgb(0, 213, 255);')
+                            span
+                                strong 入台证所需资料：（团签）
+                    p
+                        span 1.《大陆居民往来台湾通行证》+签注
+                    p
+                        span 2.身份证正反面
+                    p
+                        span 3.两寸白底彩色照片（半年以内） 【证件照：可以让客人背对白墙，穿深色衣服，拍一张胸部以上的；不要露齿、不要自拍，露出耳朵眉毛】
+                    p
+                        span 4.20岁以下孩子还需出生证明、户口本
+                    p
+                        span 5.持个签G签注的客人还需提供财力证明
+                    p
+                        span 客人联系电话
+                    p  
+                    p
+                        span
+                            span(style='color: rgb(229, 51, 51);')
+                                strong 个签G还需提供财产三选一▲：
+                            br
+                            | A.银行信用卡金卡或白金卡的正反面(金卡上要有gold字样，背面要有签名) 
+                            br
+                            | B.年收入13万人民币的收入证明（一定要有【人民币】三个字，公司地址+电话，和开具日期）
+                        a.tuanqian(href="javascript:;" target='_blank') 收入证明.doc
+                        br
+                        span
+                            | C. 5万元存款证明（冻结到回来后1个月） 
+                            br
+                            | 【夫妻或者一家三口，凭结婚证、出生证明、全家户口本能证明关系，可以用一份财力】
+                            br
+                            | D.在校大学生可用学生证来代替财力，需要学生证封皮、照片页（有钢章印和注册盖章页）
+
+    .clearfix
+block script
+    script.
+
+        window.onload =function(){
+            $("body").iealert;
+            $('.category').remove;
+        }
+
+
+        //焦点图初始化
+        featuredcontentslider.init({
+            id: "syFocusThumb", //指定ID
+            contentsource: ["inline", ""], //有效值: ["inline", ""] 嵌入html or ["ajax", "path_to_file"] 嵌入utf-8文件
+            toc: "scroll", //有效值: "#increment" 标记序号, "markup", ["markup1", "markup2", etc]标记具体内容
+            nextprev: ["", ""], //next_pre标记 ，如："上一条" "下一条"，设置为 "" 为不出现
+            revealtype: "click", //鼠标事件有效值: "click" or "mouseover"
+            enablefade: [false, 0.15], // 切换褪色度 "true"or "false"
+            autorotate: [true, 3500], // 切换停留时间 "true"or "false"
+            delay: 0, //事件延迟时间(默认值：0，单位：ms)
+            //playtab: 4, 默认的播放舌签
+            onChange: function (previndex, curindex) { //触发处理；previndex 触发处理上一个记录； curindex 触发处理上一个记录 可以自定义函数控制；参考亲子网首页"亲子部落-相册"
+            }
+        });
+
+        $(function  {
+                $('.content_data').fullCalendar({
+                    header: {
+                        left: 'prev',
+                        center: 'title',
+                        right: 'next'
+                    },
+                    titleFormat: {
+                        month: 'MMMM YYYY'
+                    },
+                    lang: 'zh-cn',
+                    firstDay: 1,
+                    weekMode: 'fixed',
+                });
+            });

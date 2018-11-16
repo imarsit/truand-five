@@ -1,0 +1,36 @@
+extends layout
+
+block vars
+    - let title = '神舟国旅'
+
+block content
+    .login-box
+        .login-box-c
+            .login
+                h2 用户登录
+                .login-in
+                    form#loginFrm
+                        p
+                            input#CLoginForm_username.user(maxlength='50', placeholder='请输入用户名', name='CLoginForm[username]', type='text')
+                        p
+                            input#CLoginForm_password.pass(maxlength='50', placeholder='请输入密码', name='CLoginForm[password]', type='password')
+                        p
+                            input#CLoginForm_verifyCode.yzm(maxlength='4', placeholder='请输入验证码', name='CLoginForm[verifyCode]', type='text')
+                            span.yzm
+                                img#yw0(title='点击刷新验证码', style='cursor:pointer;', src='/public/images/agentc-site-captcha.png', alt='点击刷新验证码')
+                        p
+                            input#ytCLoginForm_rememberMe(type='hidden', value='0', name='CLoginForm[rememberMe]')
+                            input#CLoginForm_rememberMe.che(name='CLoginForm[rememberMe]', value='1', type='checkbox')
+                            |   两周内自动登录
+                            span.yzm
+                                a(href='#') 忘记密码？
+                        p
+                            input#btn_login.btn(type='button', value='登 录')
+                        p
+                            | 您还没有神舟国旅集团账号？ 
+                            a(href='register') 立刻注册
+
+    .clearfix
+block script
+    script.
+        $('.category').hide();

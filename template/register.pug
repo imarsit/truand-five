@@ -1,0 +1,44 @@
+extends layout
+
+block vars
+    - let title = '神舟国旅'
+
+block content
+    .login-box
+        .login-box-c(style='height: 460px;')
+            .login
+                h2 用户注册
+                .login-in
+                    form#regeisterFrm
+                        p
+                            input#NetUser_loginname.user(maxlength='50', placeholder='请输入登录手机号', name='NetUser[loginname]', type='text')
+                            b *
+                        p
+                            input#NetUser_name.uname(maxlength='50', placeholder='请输入用户姓名', name='NetUser[name]', type='text')
+                            b *
+                        p
+                            input#NetUser_password.pass(maxlength='50', placeholder='请输入密码', name='NetUser[password]', type='password')
+                            b *
+                        p
+                            input#NetUser_verifyPassword.pass(maxlength='50', placeholder='请输入确认密码', name='NetUser[verifyPassword]', type='password')
+                            b *
+                        p
+                            input#NetUser_verifyCode.yzm(maxlength='4', placeholder='请输入验证码', name='NetUser[verifyCode]', type='text')
+                            b *
+                            span.yzm
+                                img#yw0(title='点击刷新验证码', style='cursor:pointer;', src='/public/images/agentc-site-captcha.png', alt='点击刷新验证码')
+                        p.reg
+                            input.che(type='checkbox', checked='checked')
+                            |   我已阅读并接受
+                            a.btgst(href='javascript:;') 《神舟国旅会员服务条款》
+                        p
+                            input#btn_regeister.btn(type='button', value='注 册')
+                        p
+                            | 已有神舟国旅集团账号？ 
+                            a(href='login') 立刻登录
+
+
+block script
+    script.
+
+        $('.category').hide();

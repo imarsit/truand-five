@@ -1,0 +1,564 @@
+extends layout
+
+block vars
+    - let title = '神州国旅'
+block content
+    .clearfix
+    .area.mt10
+        .area-left-ej
+            include lib/list
+            .home-right-box
+                h2 当季产品推荐
+                ul.home-right-list
+            .home-right-box
+                h2 猜你喜欢
+                ul.home-right-list
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-06/ypgc2.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 山西【左右旅游-元旦】双高3日 平遥古城、壶口瀑布、洪洞大槐树、王家大院
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20165554231-price 1340
+                            |  起
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-07/yks1.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 华东【一品黄山】双卧4日 黄山日出+夜宿黄山山顶
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20162377224-price 1999
+                            |  起
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-11/cc8682e799db496e5d7d88937f311bbd.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 东北【北国风光  玩转大东北冰雪之美】L1： 哈尔滨、漠河、北极村、圣诞村
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20168343735-price 3280
+                            |  起
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-11/766303002744345332.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 【金沙绝响】：四川 SX01 【纯玩半自由行】双飞5日尊享游 成都 金沙遗址 九
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20164223280-price 3060
+                            |  起
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-11/ndm1.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 东北【北国风光  挑战极寒】L2： 哈尔滨、呼伦贝尔、冰雪那达慕、额尔古纳
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20167296194-price 4420
+                            |  起
+                    div
+                        a(href='details')
+                            img(src='/public/images/files/2016-11/20141214165154.jpg', style='width: 230px; height: 129px;')
+                        dl.nof
+                            a(href='details' ) 东北【北国风光 俄式风情】H4：哈尔滨、冰雪大世界、中央大街、俄式风情小
+                            br
+                            | ￥ 
+                            span.uz-g-price-item.uz-g-20165417314-price 1300
+                            |  起
+        .area-right-ej
+            .ej-hot-product
+            .ej-box
+                .shaixuan
+                    form#listform
+                        .shaixuan_box
+                            h2 行程天数：
+                            ul.s
+                                a.selected(href='javascript:;', search_key='days', search_value='-1') 不限
+                                a(href='javascript:;', search_key='days', search_value='3') 3天
+                                a(href='javascript:;', search_key='days', search_value='4') 4天
+                                a(href='javascript:;', search_key='days', search_value='5') 5天
+                                a(href='javascript:;', search_key='days', search_value='6') 6天
+                                a(href='javascript:;', search_key='days', search_value='7') 7天
+                        .shaixuan_box
+                            h2 筛选：
+                            ul.s
+                                li
+                                    label
+                                        input(type='checkbox', name='is_recommend', value='1')
+                                        |  推荐
+                                li
+                                    label
+                                        input(type='checkbox', name='is_hot', value='1')
+                                        |  热销
+                                li
+                                    label
+                                        input(type='checkbox', name='is_marked', value='1')
+                                        |  特惠
+                .ej-product-list
+                    #group_listview.list-view
+                        .b_fore.clearfix
+                            .ej-box-tit
+                                ul
+                                    li
+                                        a(href='javascript:;') 时间
+                                    li
+                                        a(href='javascript:;') 价格
+                            .summary 第 1-15 条, 共 339 条.
+                            div(style='clear: both;')
+                            .ej-box-tit-line
+                        .items
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-12/326375554132191394.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 品质：四川SX7【麻辣熊猫】双飞4晚5日冬季游  成都 九寨沟 牟
+                                    p
+                                        | 线路编号：
+                                        span 20164112380
+                                        | 行程：
+                                        span 5天
+                                        | 出团日期：
+                                        span 12/09,12/10,12/11,12/12,12/13,12/14 ...
+                                    p
+                                        | 产品特色：
+                                        | 1、景点全面：九寨沟、牟尼沟、熊猫乐园、叠溪海子
+                                        | 2、免费升级：成都商务酒店，九寨准四星，保证干净卫生
+                                        | 3、特色膳食：茶马古道随饭菜、风味农家菜等
+                                        | 4、司机10年以上九寨专线驾驶经验，车辆2年内新车
+                                        | 5、一车一导，0购物，0自费
+                                        | 6、两大赠送，不升级
+                                        | 赠送1：走进藏家活动（体...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20164112380-price 2600
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-11/zgxx.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 东北【北国风光  冰雪共舞】T1：哈尔滨、亚布力滑雪、雪乡、
+                                    p
+                                        | 线路编号：
+                                        span 20161848521
+                                        | 行程：
+                                        span 6天
+                                        | 出团日期：
+                                        span 12/10,12/17,12/20,12/24,12/27,12/31 ...
+                                    p
+                                        | 1、住宿绝不忍耐：二道白河1晚温泉五星标准酒店，哈尔滨宿中央大街附近四星标准酒店
+                                        | 雪乡3-6人独卫大炕，万嘉戴斯酒店，2档酒店任选
+                                        | 2、出行决不妥协：大散拼！零团费！大写加粗的NO！我们一车一导！10%空座率！我们0购物！无强消！
+                                        | 3、美食必须跟上：除了小鸡炖蘑菇、猪肉炖粉条、翠花上的酸...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20161848521-price 3520
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/hcyg.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【佛佑天下】双卧6日 黄山观日出（夜宿山顶）+莲花佛国
+                                    p
+                                        | 线路编号：
+                                        span 20162649305
+                                        | 行程：
+                                        span 6天
+                                        | 出团日期：
+                                        span 01/29,01/30,01/31,02/01,02/02 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】搭乘中国颜值最高的“最美高铁”京福线;
+                                        | 【大美千岛】一次出行，游遍皖南主景：“天下第一名山”-黄山，中国四大佛教名山之一-九华山，“中国画里的乡村”-宏村;
+                                        | 【四星住宿】独家安排市区四星标准酒店(旅游局未评定四星级)含自助早餐，轻度奢华...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20162649305-price 2799
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/txlj.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【梦幻徽州】双卧5日 黄山观日出(夜宿山顶)+西递+宏村+屯
+                                    p
+                                        | 线路编号：
+                                        span 20162573333
+                                        | 行程：
+                                        span 5天
+                                        | 出团日期：
+                                        span 12/29,12/30,12/31 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】K字头列车直达黄山可欣赏沿途风景;
+                                        | 【梦幻徽州】此为世界自然与文化双遗产精品旅游线路，一次出行玩遍皖南主景，游览世界文化与自然双遗产—黄山，探访徽州最有代表性，也最具徽州特色的皖南古民居- “中国画里的乡村”—宏村、“中国明清徽派建筑博...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20162573333-price 2299
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-11/hczyt.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【佛佑天下】双高5日 黄山观日出(夜宿山顶)+莲花佛国九
+                                    p
+                                        | 线路编号：
+                                        span 20166586382
+                                        | 行程：
+                                        span 5天
+                                        | 出团日期：
+                                        span 01/30,01/31,02/01,02/02,02/03 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】搭乘中国颜值最高的“最美高铁”京福线;
+                                        | 【大美千岛】一次出行，游遍皖南主景：“天下第一名山”-黄山，中国四大佛教名山之一-九华山，“中国画里的乡村”-宏村;
+                                        | 【四星住宿】独家安排市区四星标准酒店(旅游局未评定四星级)含自助早餐，轻度奢华...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20166586382-price 3299
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-10/jhxs.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 华东【礼佛之旅】双高3日 莲花佛国九华山祈福之旅
+                                    p
+                                        | 线路编号：
+                                        span 20166311734
+                                        | 行程：
+                                        span 3天
+                                        | 出团日期：
+                                        span 12/30,12/31 ...
+                                    p
+                                        | 行程特色：全程纯玩无购物，无强制自费项目，游览时间充足，尽享轻松、阳光旅程
+                                        | 住宿标准：夜宿九华山顶挂三星双标间，赠早餐
+                                        | 用餐标准：早餐为赠送，如不用餐，费用恕不退还，全程共2早
+                                        | 购物店：全程纯玩无购物
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20166311734-price 2799
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/hc2.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【梦幻徽州】双高4日 黄山观日出(夜宿山顶)+西递+宏村+屯
+                                    p
+                                        | 线路编号：
+                                        span 20164776952
+                                        | 行程：
+                                        span 4天
+                                        | 出团日期：
+                                        span 12/30,12/31 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】搭乘中国颜值最高的“最美高铁”京福线;
+                                        | 【梦幻徽州】此为世界自然与文化双遗产精品旅游线路，一次出行玩遍皖南主景，游览世界文化与自然双遗产—黄山，探访徽州最有代表性，也最具徽州特色的皖南古民居- “中国画里的乡村”—宏村、“中国明清...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20164776952-price 2999
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/hsyry.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 华东【一品黄山】双高3日 黄山日出＋夜宿黄山山顶
+                                    p
+                                        | 线路编号：
+                                        span 20165780690
+                                        | 行程：
+                                        span 3天
+                                        | 出团日期：
+                                        span 12/30,12/31 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】搭乘中国颜值最高的“最美高铁”京福线;
+                                        | 【一品黄山】黄山全景深度游，前后山精华景点一应俱全，并深入黄山腹地，游览梦幻景区-黄山西海大峡谷，更有机会欣赏黄山日出胜景;
+                                        | 【四星住宿】独家安排市区四星标准酒店(旅游局未评定四星级)含自助早餐，轻度奢华...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20165780690-price 2399
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/hc1.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【一品黄山】双卧4日 黄山日出+夜宿黄山山顶
+                                    p
+                                        | 线路编号：
+                                        span 20162377224
+                                        | 行程：
+                                        span 4天
+                                        | 出团日期：
+                                        span 12/29,12/30,12/31 ...
+                                    p
+                                        | 行程特色
+                                        | 【交通方式】K字头列车直达黄山可欣赏沿途风景;
+                                        | 【一品黄山】黄山全景深度游，前后山精华景点一应俱全，并深入黄山腹地，游览梦幻景区-黄山西海大峡谷，更有机会欣赏黄山日出胜景;
+                                        | 【观赏日出】山顶安排多人间高低铺独卫床(不含早餐)，早起后根据天气情况欣赏黄山绚丽的日出美...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20162377224-price 1999
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/zh.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【水墨江南】双卧7日 华东五市+南山竹海(夜宿)+鼋头渚+乌
+                                    p
+                                        | 线路编号：
+                                        span 20165233866
+                                        | 行程：
+                                        span 7天
+                                        | 出团日期：
+                                        span 01/26,01/27,01/28,01/29 ...
+                                    p
+                                        | 行程特色：
+                                        | ★ 优选华东最具代表性的重磅景区
+                                        | 美丽氧吧南山竹海、无锡鼋头渚、 盘门(中国保存完整的水陆二用城门)、枫桥(枫桥夜泊地)、江南第一水乡乌镇、最美水乡—南浔、杭州最美西湖、西湖丝绸博物馆、上海迪斯尼旗舰店;
+                                        | ★ 舌尖上的江南----次难忘的美食之旅
+                                        | 全程安排华东各地最...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20165233866-price 2299
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/wzdl.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 华东【至尊江南】双卧7日 华东五市+乡乌镇（夜宿）+船游七里
+                                    p
+                                        | 线路编号：
+                                        span 20161906480
+                                        | 行程：
+                                        span 7天
+                                        | 出团日期：
+                                        span 01/26,01/27,01/28,01/29 ...
+                                    p
+                                        | 行程特色：
+                                        | ★游： 加量不加价：
+                                        | 独家推出乘七桅古帆船畅游太湖;
+                                        | 独家推出游中国四大名园之一——留园，独家赠送私人定制精美礼品;
+                                        | 赠送金陵第一王府——瞻园（除夕当天瞻园不营业改去雨花台）;
+                                        | 赠送船游姑苏第一古街——七里山塘;
+                                        | ★食：倾情赠送特色餐：太湖三...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20161906480-price 2699
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/wzyjhl.jpeg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 华东【至尊江南】双高5日 华东五市+水乡乌镇（夜宿）+船游七
+                                    p
+                                        | 线路编号：
+                                        span 20167377903
+                                        | 行程：
+                                        span 5天
+                                        | 出团日期：
+                                        span 01/27,01/28,01/29,01/30 ...
+                                    p
+                                        | 行程特色：
+                                        | 游： 加量不加价：
+                                        | 独家推出乘七桅古帆船畅游太湖;
+                                        | 独家推出游中国四大名园之一——留园，独家赠送私人定制精美礼品;
+                                        | 赠送金陵第一王府——瞻园（除夕当天瞻园不营业改去雨花台）;
+                                        | 赠送船游姑苏第一古街——七里山塘;
+                                        | 食：倾情赠送特色餐：太湖三白宴...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20167377903-price 3299
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-11/hrb.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 东北【北国风光  冰雪共舞】T1：哈尔滨、亚布力滑雪、雪乡、
+                                    p
+                                        | 线路编号：
+                                        span 20167408563
+                                        | 行程：
+                                        span 7天
+                                        | 出团日期：
+                                        span 12/09,12/16,12/19,12/23,12/26,12/29,12/30 ...
+                                    p
+                                        | 1、住宿绝不忍耐：二道白河1晚温泉五星标准酒店，哈尔滨宿中央大街附近四星标准酒店
+                                        | 雪乡3-6人独卫大炕，万嘉戴斯酒店，2档酒店任选
+                                        | 2、出行决不妥协：大散拼！零团费！大写加粗的NO！我们一车一导！10%空座率！我们0购物！无强消！
+                                        | 3、美食必须跟上：除了小鸡炖蘑菇、猪肉炖粉条、翠花上的酸...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20167408563-price 3150
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-07/wzdl4.jpg')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' )
+                                            | 华东【情迷乌镇】双高3日 杭州一地乌镇西栅+西塘古镇+漫步西
+                                    p
+                                        | 线路编号：
+                                        span 20165882930
+                                        | 行程：
+                                        span 3天
+                                        | 出团日期：
+                                        span 12/31 ...
+                                    p
+                                        | 行程特色
+                                        | 【重磅水乡】江南最好的2大王牌水乡—西塘、乌镇西栅，一座小桥、一幢古建筑、一点炊烟，狭窄整洁的街道、小而幽静的古镇，有种来自生活的恬静撩拨着您的心弦，让您体验真正的江南水乡风情;
+                                        | 【夜宿乌镇】一晚杭州豪华酒店，一晚夜宿乌镇西栅景区外高标酒店或嘉兴或桐乡豪华...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20165882930-price 2599
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 国内跟团游
+                                        img(src='/public/images/files/2016-11/779149096893735747.jpg')
+                                dt
+                                    h2
+                                        a(href='details' )
+                                            | 品质：四川SX5【温情九寨】双卧4晚7日冬季游 成都 九寨沟 牟
+                                    p
+                                        | 线路编号：
+                                        span 20161498669
+                                        | 行程：
+                                        span 7天
+                                        | 出团日期：
+                                        span 12/09,12/10,12/11,12/12,12/13,12/14 ...
+                                    p
+                                        | 行程特色：
+                                        | 【成都自由活动】逛成都，品美食，给您自由时间舒适漫步老成都！
+                                        | 1、行程途中配备保温壶，一杯热水，驱走冬日严寒
+                                        | 2、配备维C之王沙棘冲剂，补充维生素，润泽干燥，恢复体力
+                                        | 3、优秀导游服务，绝对全程陪同，游览时间、线路、标准把握，领略九寨精粹
+                                        | 4、精选舒...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20161498669-price 2260
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                        .ej-box-tit-line2
+                        .pagination.pagination-centered
+                            ul#yw0.yiiPager
+                                li.first.hidden
+                                    a(href='jiavascript:;') <<
+                                li.previous.hidden
+                                    a(href='jiavascript:;') <
+                                li.page.selected
+                                    a(href='jiavascript:;') 1
+                                li.page
+                                    a(href='jiavascript:;') 2
+                                li.page
+                                    a(href='jiavascript:;') 3
+                                li.page
+                                    a(href='jiavascript:;') 4
+                                li.page
+                                    a(href='jiavascript:;') 5
+                                li.page
+                                    a(href='jiavascript:;') 6
+                                li.page
+                                    a(href='jiavascript:;') 7
+                                li.page
+                                    a(href='jiavascript:;') 8
+                                li.next
+                                    a(href='jiavascript:;') >
+                                li.last
+                                    a(href='jiavascript:;') >>
+
+    .clearfix
+block script
+    script.

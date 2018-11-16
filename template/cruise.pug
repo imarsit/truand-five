@@ -1,0 +1,53 @@
+extends layout
+
+block vars
+    - let title = '神舟国旅'
+
+block content
+    .clearfix
+    .area.mt10
+        .area-left-ej
+            include lib/list
+            .home-right-box
+                h2 当季产品推荐
+                ul.home-right-list
+            .home-right-box
+                h2 猜你喜欢
+                ul.home-right-list
+        .area-right-ej
+            .ej-hot-product
+            .ej-box
+                .shaixuan
+                    form#listform
+                        .shaixuan_box
+                            h2 行程天数：
+                            ul.s
+                                a.selected(href='javascript:;', search_key='days', search_value='-1') 不限
+                        .shaixuan_box
+                            h2 筛选：
+                            ul.s
+                                li
+                                    label
+                                        input(type='checkbox', name='is_recommend', value='1')
+                                        |  推荐
+                                li
+                                    label
+                                        input(type='checkbox', name='is_hot', value='1')
+                                        |  热销
+                                li
+                                    label
+                                        input(type='checkbox', name='is_marked', value='1')
+                                        |  特惠
+                .ej-product-list
+                    #group_listview.list-view
+                        .b_fore.clearfix
+                            div(style='clear: both;')
+                            .ej-box-tit-line
+                        .items
+                            span.empty  抱歉，没有找到符合条件的产品！
+                        .ej-box-tit-line2
+    .clearfix
+
+block script
+    script.
+

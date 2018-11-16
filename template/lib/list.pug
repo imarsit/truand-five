@@ -1,0 +1,183 @@
+
+.home-right-box(style='border-bottom:0px;')
+    h2.acc_trigger.active
+        a(href='javascript:;') 港台地区
+    .acc_container(style='display: block;')
+        ul
+            li
+                a(href='javascript:;' ) 台湾
+            li
+                a(href='javascript:;' ) 香港
+            li
+                a(href='javascript:;' ) 澳门
+    h2.acc_trigger
+        a(href='javascript:;') 云南旅游
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 丽江
+            li
+                a(href='javascript:;' ) 大理
+            li
+                a(href='javascript:;' ) 西双版纳
+            li
+                a(href='javascript:;' ) 昆明
+            li
+                a(href='javascript:;' ) 腾冲
+            li
+                a(href='javascript:;' ) 香格里拉
+            li
+                a(href='javascript:;') 泸沽湖
+    h2.acc_trigger
+        a(href='javascript:;') 海南旅游
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 三亚
+            li
+                a(href='javascript:;' ) 海口
+            li
+                a(href='javascript:;') 西沙群岛
+    h2.acc_trigger
+        a(href='javascript:;') 华东旅游
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 广西
+            li
+                a(href='javascript:;' ) 海南
+            li
+                a(href='javascript:;' ) 广东
+            li
+                a(href='javascript:;' ) 桂林
+            li
+                a(href='javascript:;' ) 阳朔
+            li
+                a(href='javascript:;' ) 巴马
+            li
+                a(href='javascript:;' ) 广州
+            li
+                a(href='javascript:;' ) 深圳
+            li
+                a(href='javascript:;' ) 珠海
+    h2.acc_trigger
+        a(href='javascript:;') 华中地区
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;') 三峡
+            li
+                a(href='javascript:;' ) 湖南
+            li
+                a(href='javascript:;' ) 张家界
+            li
+                a(href='javascript:;' ) 湖北
+            li
+                a(href='javascript:;' ) 河南
+            li
+                a(href='javascript:;') 云台山
+            li
+                a(href='javascript:;' ) 江西
+            li
+                a(href='javascript:;' ) 婺源
+            li
+                a(href='javascript:;' ) 武汉
+            li
+                a(href='javascript:;' ) 恩施
+    h2.acc_trigger
+        a(href='javascript:;') 西北旅游
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 陕西
+            li
+                a(href='javascript:;' ) 西安
+            li
+                a(href='javascript:;' ) 新疆
+            li
+                a(href='javascript:;' ) 宁夏
+            li
+                a(href='javascript:;' ) 青海
+            li
+                a(href='javascript:;' ) 甘肃
+            li
+                a(href='javascript:;' ) 西宁
+            li
+                a(href='javascript:;' ) 敦煌
+            li
+                a(href='javascript:;' ) 银川
+    h2.acc_trigger
+        a(href='javascript:;') 西南地区
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 西藏
+            li
+                a(href='javascript:;' ) 四川
+            li
+                a(href='javascript:;' ) 九寨沟
+            li
+                a(href='javascript:;' ) 云南
+            li
+                a(href='javascript:;' ) 丽江
+            li
+                a(href='javascript:;' ) 黄果树
+            li
+                a(href='javascript:;' ) 贵州
+            li
+                a(href='javascript:;' ) 重庆
+    h2.acc_trigger
+        a(href='javascript:;') 东北旅游
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 大连
+            li
+                a(href='javascript:;' ) 辽宁
+            li
+                a(href='javascript:;' ) 长白山
+            li
+                a(href='javascript:;' ) 吉林
+            li
+                a(href='javascript:;' ) 哈尔滨
+            li
+                a(href='javascript:;' ) 黑龙江
+    h2.acc_trigger
+        a(href='javascript:;') 华北地区
+    .acc_container(style='display: none;')
+        ul
+            li
+                a(href='javascript:;' ) 北京
+            li
+                a(href='javascript:;' ) 山西
+            li
+                a(href='javascript:;' ) 内蒙古
+            li
+                a(href='javascript:;' ) 天津
+            li
+                a(href='javascript:;' ) 河北
+            li
+                a(href='javascript:;' ) 五台山
+            li
+                a(href='javascript:;' ) 山东
+            li
+                a(href='javascript:;' ) 青岛
+
+block script
+    script.
+
+        $('.category').hide();
+
+        $('.acc_container').hide();
+        $('.acc_trigger:first').addClass('active').next().show();
+        $('.acc_trigger').click(function () {
+            if ($(this).next().is(':hidden')) {
+                $('.acc_trigger').removeClass('active').next().slideUp();
+                $(this).toggleClass('active').next().slideDown();
+            }
+            return false;
+        });
+
+        $('.category-content').hover(function(){
+            $('.category').toggle();
+        });

@@ -1,0 +1,234 @@
+extends layout
+
+block vars
+    - let title = '神舟国旅'
+
+block content
+    .clearfix
+    .area.mt10
+        .area-left-ej
+            include lib/list
+            .home-right-box
+                h2 当季产品推荐
+                ul.home-right-list
+            .home-right-box
+                h2 猜你喜欢
+                ul.home-right-list
+        .area-right-ej
+            .ej-hot-product
+            .ej-box
+                .shaixuan
+                    form#listform
+                        .shaixuan_box
+                            h2 行程天数：
+                            ul.s
+                                a.selected(href='javascript:;', search_key='days', search_value='-1') 不限
+                                a(href='javascript:;', search_key='days', search_value='1') 1天
+                        .shaixuan_box
+                            h2 筛选：
+                            ul.s
+                                li
+                                    label
+                                        input(type='checkbox', name='is_recommend', value='1')
+                                        |  推荐
+                                li
+                                    label
+                                        input(type='checkbox', name='is_hot', value='1')
+                                        |  热销
+                                li
+                                    label
+                                        input(type='checkbox', name='is_marked', value='1')
+                                        |  特惠
+                .ej-product-list
+                    #group_listview.list-view
+                        .b_fore.clearfix
+                            .ej-box-tit
+                                ul
+                                    li
+                                        a(href='javascript:;') 时间
+                                    li
+                                        a(href='javascript:;') 价格
+                            .summary 第 1-6 条, 共 6 条.
+                            div(style='clear: both;')
+                            .ej-box-tit-line
+                        .items
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' title='北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟玻璃观景台双汽一日游（48人独立）')
+                                            | 北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟
+                                    p
+                                        | 线路编号：
+                                        span 20162206990
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、最安全的刺激体验！有胆你就来！
+                                        | 3、全国首家固定冀飞机飞行体验！
+                                        | 4、钛合金UFO：观景台悬挑崖壁外32.8米，世界悬挑最长；
+                                        | 5、钛合金UFO：观景的玻璃平台载员面积415平米，世界玻璃平台面积最大；
+                                        | 6、钛合金UFO：首次将...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20162206990-price 980
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' title='北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟玻璃观景台双汽一日游（36人独立）')
+                                            | 北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟
+                                    p
+                                        | 线路编号：
+                                        span 20166058245
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、最安全的刺激体验！有胆你就来！
+                                        | 3、全国首家固定冀飞机飞行体验！
+                                        | 4、钛合金UFO：观景台悬挑崖壁外32.8米，世界悬挑最长；
+                                        | 5、钛合金UFO：观景的玻璃平台载员面积415平米，世界玻璃平台面积最大；
+                                        | 6、钛合金UFO：首次将...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20166058245-price 1020
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details' title='北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟玻璃观景台双汽一日游（12人独立）')
+                                            | 北京平谷【左右旅游-私家团】15分钟花样飞行、钛合金UFO-飞碟
+                                    p
+                                        | 线路编号：
+                                        span 20169217751
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、最安全的刺激体验！有胆你就来！
+                                        | 3、全国首家固定冀飞机飞行体验！
+                                        | 4、钛合金UFO：观景台悬挑崖壁外32.8米，世界悬挑最长；
+                                        | 5、钛合金UFO：观景的玻璃平台载员面积415平米，世界玻璃平台面积最大；
+                                        | 6、钛合金UFO：首次将...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20169217751-price 1110
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details', title='北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞行体验-玩转海陆空（48人独立）')
+                                            | 北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞
+                                    p
+                                        | 线路编号：
+                                        span 20166627888
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、不出北京玩转海陆空！
+                                        | 3、此团适合亲子游，带着宝贝去飞行！
+                                        | 4、全国首家固定冀飞机飞行体验！
+                                        | 5、现在您也可以亲自体验一把低空花样飞行！感受翱翔蓝天，体验急速下降、俯冲体验失重感，急跃升、大坡度盘旋体验过...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20166627888-price 1000
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        span.is_tag 热销
+                                        a(href='details', title='北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞行体验-玩转海陆空（36人独立）')
+                                            | 北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞
+                                    p
+                                        | 线路编号：
+                                        span 20164850397
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、不出北京玩转海陆空！
+                                        | 3、此团适合亲子游，带着宝贝去飞行！
+                                        | 4、全国首家固定冀飞机飞行体验！
+                                        | 5、现在您也可以亲自体验一把低空花样飞行！感受翱翔蓝天，体验急速下降、俯冲体验失重感，急跃升、大坡度盘旋体验过...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20164850397-price 1060
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                            dl
+                                dd
+                                    a(href='details')
+                                        span.tag 周边游
+                                        img(src='/public/images/files/2016-04/jx.png')
+                                dt
+                                    h2
+                                        a(href='details', title='北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞行体验-玩转海陆空（12人独立）')
+                                            | 北京平谷【左右旅游-私家团】金海湖乘风破浪，15分钟花样飞
+                                    p
+                                        | 线路编号：
+                                        span 20164984282
+                                        | 行程：
+                                        span 1天
+                                        | 出团日期：
+                                        span 06/26,06/27,06/28,06/29,06/30 ...
+                                    p
+                                        | 1、独立成团！本产品为您提供专属车辆及专属领队服务，让您尽享尊贵！
+                                        | 2、不出北京玩转海陆空！
+                                        | 3、此团适合亲子游，带着宝贝去飞行！
+                                        | 4、全国首家固定冀飞机飞行体验！
+                                        | 5、现在您也可以亲自体验一把低空花样飞行！感受翱翔蓝天，体验急速下降、俯冲体验失重感，急跃升、大坡度盘旋体验过...
+                                    span.price
+                                        | ¥ 
+                                        b.uz-g-price-item.uz-g-20164984282-price 1150
+                                        |  起
+                                    span.btn
+                                        a(href='details') 查看详情
+                        .ej-box-tit-line2
+    .clearfix
+block script
+    script.
