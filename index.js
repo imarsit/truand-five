@@ -9,9 +9,9 @@ module.exports = {
 		{
 			name: '首页',
 			// 路径
-			path: '/index',
+			path: '/',
 			// 预览图
-			thumbnail: 'index.png',
+			thumbnail: 'home.png',
 		},
 		{
 			name: '国内游',
