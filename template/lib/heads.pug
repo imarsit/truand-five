@@ -1,12 +1,12 @@
 .site-top
     .area
-        .site-top-l 北京神舟国旅欢迎您！
+        .site-top-l 火星人科技欢迎您！
         .site-top-r
             span 欢迎，客人
             | |
-            a(href='login') 会员登录
+            a(href='/login') 会员登录
             | |
-            a(href='register') 免费注册
+            a(href='/register') 免费注册
             | |
             a(href='#') 后台管理
             | |
@@ -14,7 +14,7 @@
 .site-head
     .logo(style='top: 16px;')
         a(href='/')
-            img(src='/public/images/icon/shenzhouguolv.png' width='249', height='60')
+            img(src='/public/images/logo.png')
     .searchbox
         form#search_form
             .searchbox-l
@@ -22,7 +22,7 @@
             .searchbox-r
                 input#btn_search(type='button', value='搜 索')
     .tel
-        span 4000100808
+        span 0771-3216270
 #nav
     .area.clearfix
         .topnav
@@ -30,15 +30,15 @@
                 li
                     a(href='/') 首页
                 li
-                    a(href='domestic') 国内游
+                    a(href='/domestic') 国内游
                 li
-                    a(href='abroad') 出境游
+                    a(href='/abroad') 出境游
                 li
-                    a(href='island') 海岛游
+                    a(href='/island') 海岛游
                 li
-                    a(href='cruise') 邮轮游
+                    a(href='/cruise') 邮轮游
                 li
-                    a(href='periphery') 周边游
+                    a(href='/periphery') 周边游
                 li
                     a(href="javascript:;") 定制旅行
         #guide_2.category-content

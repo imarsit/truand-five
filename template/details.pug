@@ -1,7 +1,7 @@
 extends layout
 
 block vars
-    - let title = '旅游详情'
+    - let title = '火星人科技'
 block content
     .area.mt10
         .content_top.mt10
@@ -135,7 +135,7 @@ block content
                         | 可选定制 
                         span VIP
                         |  小包团 
-                        span.tel 4000100808
+                        span.tel 0771-3216270
                     p
                         | 1、我们专业的团队为您提供周全的服务,让您安心出游;
                         br
@@ -481,7 +481,7 @@ block script
 
         window.onload =function(){
             $("body").iealert;
-            $('.category').remove;
+            $('.category').css('display','none');
         }
 
 
@@ -500,7 +500,7 @@ block script
             }
         });
 
-        $(function  {
+        $(function (){
                 $('.content_data').fullCalendar({
                     header: {
                         left: 'prev',
